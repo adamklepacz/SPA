@@ -13,9 +13,7 @@
 
 var spa = (function ($container) {
 	var initModule = function ($container) {
-		$container.html(
-			'<h1 style="display:inline-block; margin: 25px;">' + 'witaj świecie' + '</h1>'
-		);
+		spa.shell.initModule($container);
 	};
 	return { initModule: initModule};
 }());
